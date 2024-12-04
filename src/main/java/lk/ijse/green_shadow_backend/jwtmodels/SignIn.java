@@ -1,19 +1,14 @@
-package lk.ijse.green_shadow_backend.entity;
-
-import jakarta.persistence.*;
+package lk.ijse.green_shadow_backend.jwtmodels;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@Entity
-@Table(name = "user")
-public class User {
-    @Id
+@Builder
+public class SignIn {
     private String email;
     private String password;
-    @Enumerated(EnumType.STRING)
-    private Role role;
 }
