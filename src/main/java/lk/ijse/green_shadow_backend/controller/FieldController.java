@@ -20,6 +20,7 @@ import java.util.List;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/api/v1/field")
+@CrossOrigin("*")
 public class FieldController {
 
     private static final Logger logger = LoggerFactory.getLogger(FieldController.class);
